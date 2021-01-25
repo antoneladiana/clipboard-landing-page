@@ -1,0 +1,235 @@
+/* -------------------- COLOR PALETTE ----------------------- */
+/* 
+    https://coolors.co/26baa4-6173ff-4c545d-9fabb2
+
+                    #26baa4 Keppel
+                    #6173ff Neon Blue
+                    #4c545d Davys Grey
+                    #9fabb2 Cadet Grey
+                    
+*/
+
+/* ----------------------- GLOBAL --------------------------- */
+html {
+    box-sizing: border-box;
+    width: 100%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    background-color: #ffffff;
+    color: #9fabb2;
+    text-align: center;  
+    width: 100%;
+}
+.content-wrap {
+    width: 85%;
+    margin: 0 auto;
+}
+.title {
+    color: #4c545d;
+    font-weight: 600;
+}
+/* Buttons */
+.download-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 5vh;
+}
+button {
+    border: none;
+    padding: 20px 35px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: inherit;
+    font-size: 1.2em;
+    border-radius: 60px;
+    flex: 0 1 300px;
+}
+button:first-of-type {
+    background-color: #26baa4;
+    box-shadow: 0 3px 2px rgba(28, 135, 119, 1);
+}
+button:last-of-type {
+    background-color: #6173ff;
+    box-shadow: 0 3px 2px rgba(51, 75, 255, 1);
+}
+/* ----------------------- HEADER --------------------------- */
+header {
+    background-image: url("../images/bg-header-mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+}
+header img {
+    width: 33vw;
+    max-width: 125px;
+}
+h1 {
+    font-size: 2.3em;
+    margin-top: 10vh;
+    line-height: 1.3em;
+}
+h1 + p {
+    font-size: 1.1em;
+    padding-top: 3vh;
+    line-height: 1.7em;
+}
+/* ----------------------- MAIN ----------------------------- */
+
+/* General */
+h2 {
+    font-size: 1.9em;
+    line-height: 1.3em;
+}
+dl {
+    margin-top: 5vh;
+}
+dt {
+    font-size: 1.2em;
+}
+dd {
+    line-height: 1.6em;
+    font-size: 0.9em;
+    max-width: 400px;
+    margin: 2vh auto 0;
+}
+.mockup {
+    max-width: 60vw;
+    height: auto;
+    margin-top: 5vh;
+}
+section {
+    margin-top: 10vh;
+}
+.description {
+    font-size: 1.1em;
+    line-height: 1.8em;
+    padding-top: 2vh;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.list-item {
+    margin-top: 5vh;
+}
+.list-icon {
+    margin-bottom: 5vh;
+}
+/* Workflow section */
+.workflow {
+    margin-top: 1vh;
+}
+/* Company logos section */
+.company-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8vh;
+}
+
+/* ----------------------- FOOTER --------------------------- */
+footer {
+    background-color: rgb(159, 171, 178, 0.1);
+    margin-top: 20vh;
+    padding-bottom: 4vh;
+}
+footer img {
+    margin-top: 8vh;
+    width: 65px;
+    height: auto;
+}
+.footer-links {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 8vh;
+    column-gap: 10vw;
+    font-size: 1.2em;
+}
+.social-media a {
+    color: #4c545d;
+    font-size: 1.5em;
+}
+.link-item a {
+    text-decoration: none;
+    color: #4c545d;
+}
+.attribution {
+    font-size: 11px;
+    margin-top: 5vh;
+}
+.attribution a {
+    color: #7c8dcf;
+}
+.attribution a:hover {
+    text-decoration: none;
+}
+.attribution a:focus {
+    text-decoration: none;
+    outline: 2px solid #7c8dcf;
+}
+
+@media screen and (min-width: 900px) {
+    header {
+        background-image: url("../images/bg-header-desktop.png");
+    }
+    .snippets-details {
+        display: flex;
+        column-gap: 10vw;
+        text-align: left;
+    }
+    .snippets .img-wrap {
+        margin-left: -10vw;
+    }
+    .snippets img {
+        width: 100%;
+    }
+    .snippets-list {
+        flex: 0 1 30%;
+    }
+    .workflow-list {
+        display: flex;
+        column-gap: 3vw;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .workflow-list div {
+        flex: 0 1 350px;
+    }
+    .company-logos {
+        flex-direction: row;
+        column-gap: 5vw;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* Footer */
+    footer .content-wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-links {
+        flex-wrap: wrap;
+        column-gap: 8vw;
+        row-gap: 3vh;
+        max-height: 100px;
+        align-content: flex-start;
+        text-align: left;
+        flex-basis: 50%;
+    }
+    .social-media {
+        column-gap: 3vw;
+    }
+}
