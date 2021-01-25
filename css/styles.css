@@ -188,6 +188,7 @@ footer img {
         display: flex;
         column-gap: 10vw;
         text-align: left;
+        align-items: center;
     }
     .snippets .img-wrap {
         margin-left: -10vw;
